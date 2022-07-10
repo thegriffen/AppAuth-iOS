@@ -185,7 +185,7 @@ NS_ASSUME_NONNULL_BEGIN
     return nil;
   }
 
-  OIDServiceDiscovery *discoveryDocument = [aDecoder decodeObjectOfClasses:[NSSet setWithObjects:[OIDServiceDiscovery class], [NSArray class], [NSString class], nil]
+  OIDServiceDiscovery *discoveryDocument = [aDecoder decodeObjectOfClasses:[NSSet setWithObjects:[OIDServiceDiscovery class], [NSArray class], [NSString class], [NSNumber class], nil]
                                                                   forKey:kDiscoveryDocumentKey];
 
   return [self initWithAuthorizationEndpoint:authorizationEndpoint
